@@ -1,0 +1,9 @@
+[user]
+	name = Greg Anderson
+	email = greg@infobytes.com
+[core]
+	editor = vim
+[color]
+	ui = auto
+[alias]
+  hist = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit

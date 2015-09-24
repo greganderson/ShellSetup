@@ -1,0 +1,16 @@
+" Last edited: 1-10-15
+
+" TEST CODE
+
+" END TEST CODE
+
+" Change the use of the mark.  ` normally brings you back to the row AND column of the mark.  ' just brings you to the
+" row of the mark.  Switch ' with `
+nnoremap ' `
+nnoremap ` '
+
+" VIM normally keeps track of 20 'things' back.  Change to 1000
+set history=1000
+
+" Get out of insert mode much easier and quicker
+inoremap jk <Esc>

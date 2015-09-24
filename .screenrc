@@ -1,0 +1,2 @@
+bind > eval writebuf "exec sh -c 'xsel -nbi </tmp/screen-exchange'"
+bind y eval "exec sh -c 'xsel -bo >/tmp/screen-exchange'"

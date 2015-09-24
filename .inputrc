@@ -1,0 +1,7 @@
+# Last edited: 4-4-14
+set editing-mode vi
+set keymap vi-command
+
+# Set getting out of insert mode to be much easier
+set keymap vi-insert
+"jk": "\e"
