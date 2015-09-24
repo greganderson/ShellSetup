@@ -140,8 +140,6 @@ alias watch="watch -c"
 alias grep="grep --color"
 alias l="ls"
 
-alias vpn="sudo openconnect -u greg88 -b -s /etc/vpnc/vpnc-script vpn.ldschurch.org"
-
 # Quick aliases to get to directories
 alias home="cd /home/greg/programming/search-match/tools/emr"
 alias gits="git status"
@@ -155,31 +153,6 @@ alias screen="screen -h 10000"
 
 # Racket
 alias racket="racket -il readline"
-
-
-# Maven
-export M2_HOME="/home/greg/apps/apache-maven-3.3.3"
-export M2=$M2_HOME/bin
-export MAVEN_OPTS="-Xms256m -Xmx512m"
-export PATH=$PATH:$M2
-
-# AWS
-export EC2_HOME=/home/greg/apps/ec2-api-tools-1.7.5.0
-
-# Work
-export AWS_ACCESS_KEY='AKIAIHIOJZQL6JHLLKMA'
-export AWS_SECRET_KEY='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'
-
-# Greg: Personal
-#export AWS_ACCESS_KEY='AKIAJ5PUVOH2S3PDKQDQ'
-#export AWS_SECRET_KEY='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'
-
-# Umair: Personal
-#export AWS_ACCESS_KEY='AKIAIAWA5GZSZVD5DSHA'
-#export AWS_SECRET_KEY='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'
-
-export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY
-export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_KEY
 
 eval `dircolors ~/.dir_colors`
 
