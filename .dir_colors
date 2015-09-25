@@ -208,4 +208,5 @@ EXEC 01;32
 .sql 00;31
 .pdf 00;33
 .spark 00;36
+.pptx 00;32
 # GREG END
