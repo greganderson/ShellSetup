@@ -2,9 +2,9 @@
 
 " TEST CODE
 
-"hi Search ctermbg=green
-noremap * :hi Search ctermbg=yellow<CR>*
-noremap # :hi Search ctermbg=green<CR>#
+
+
+
 
 " END TEST CODE
 
@@ -212,6 +212,8 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+" Syntax highlighting for openscad files
+au BufRead,BufNewFile *.scad    setfiletype openscad
 
 " From /etc/vim/vimrc
 set ignorecase		" Do case insensitive matching
