@@ -120,9 +120,11 @@ export PATH=$PATH:/home/greg/apps/racket-6.2.1/bin
 export PATH=$PATH:/home/greg/apps/spark-1.2.1-bin-hadoop2.4/bin
 export PATH=$PATH:/home/greg/apps/idea-IC-141.1532.4/bin
 export PATH=$PATH:/home/greg/apps/eclipse
+#export PATH=$PATH:/home/greg/apps/android-studio/bin
 
-#export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
-export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_60"
+
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk"
+#export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_60"
 export JDK_HOME=$JAVA_HOME
 
 # Java
@@ -168,5 +170,9 @@ man() {
 }
 
 function cd () { builtin cd "$@" && ls; }
+
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
 ### GREG END
 #export PATH=$PATH:
