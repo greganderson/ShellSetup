@@ -209,4 +209,5 @@ EXEC 01;32
 .pdf 00;33
 .spark 00;36
 .pptx 00;32
+.java 00;36
 # GREG END
