@@ -19,6 +19,9 @@ source "${HOME}/zsh/zgen/zgen.zsh"
 if ! zgen saved; then
 	echo "Creating a zgen save"
 
+	### TO LOAD NEW PLUGINS
+	# Run zgen-update
+
 	# plugins
 	zgen load zsh-users/zsh-history-substring-search
 	zgen load hchbaw/opp.zsh
