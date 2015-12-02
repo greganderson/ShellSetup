@@ -7,7 +7,7 @@ SAVEHIST=1000
 autoload -Uz compinit
 compinit
 
-source .gregzshrc
+source ~/.gregzshrc
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
@@ -37,3 +37,7 @@ if ! zgen saved; then
 	# save all to init script
 	zgen save
 fi
+
+
+
+bindkey -M viins '^R' zaw-history
