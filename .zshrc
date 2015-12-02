@@ -41,3 +41,4 @@ fi
 
 
 bindkey -M viins '^R' zaw-history
+bindkey -M viins '^@' zaw
