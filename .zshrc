@@ -29,8 +29,11 @@ if ! zgen saved; then
 	zgen load zsh-users/zaw
 	zgen load willghatch/zsh-saneopt
 	zgen load willghatch/zsh-hooks
-	zgen load willghatch/zsh-megaprompt
 	zgen load termoshtt/zaw-systemd
+
+	# Themes
+	zgen load willghatch/zsh-megaprompt
+	#zgen load https://github.com/nojhan/liquidprompt
 
 	# completions
 	zgen load zsh-users/zsh-completions src
