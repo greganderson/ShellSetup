@@ -211,4 +211,7 @@ EXEC 01;32
 .pptx 00;32
 .java 00;36
 .json 00;36
+.csv 00;36
+.html 00;32
+.tex 00;33
 # GREG END
