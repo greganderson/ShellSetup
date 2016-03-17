@@ -205,7 +205,7 @@ EXEC 01;32
 .py 00;35
 .hive 00;36
 .hql 00;36
-.sql 00;31
+.sql 00;36
 .pdf 00;33
 .spark 00;36
 .pptx 00;32
