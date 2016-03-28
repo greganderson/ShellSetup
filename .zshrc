@@ -32,8 +32,8 @@ if ! zgen saved; then
 	zgen load termoshtt/zaw-systemd
 
 	# Themes
-	zgen load willghatch/zsh-megaprompt
-	#zgen load https://github.com/nojhan/liquidprompt
+	#zgen load willghatch/zsh-megaprompt
+	zgen load https://github.com/nojhan/liquidprompt
 
 	# completions
 	zgen load zsh-users/zsh-completions src
@@ -48,3 +48,5 @@ fi
 
 bindkey -M viins '^R' zaw-history
 bindkey -M viins '^@' zaw
+
+export PYTHONSTARTUP=$HOME/.pythonrc
