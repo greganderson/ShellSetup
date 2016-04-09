@@ -3,7 +3,7 @@
 " TEST CODE
 
 
-
+ hi Search cterm=NONE ctermfg=white ctermbg=blue
 
 
 " END TEST CODE
