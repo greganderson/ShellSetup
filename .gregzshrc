@@ -134,6 +134,9 @@ man() {
   man "$@"
 }
 
+# Raspberry Pi 2
+# pi@192.168.1.24
+
 function cd () { builtin cd "$@" && ls; }
 ### GREG END
 #export PATH=$PATH:
