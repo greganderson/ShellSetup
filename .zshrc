@@ -50,3 +50,5 @@ bindkey -M viins '^R' zaw-history
 bindkey -M viins '^@' zaw
 
 export PYTHONSTARTUP=$HOME/.pythonrc
+
+setopt NO_HUP
