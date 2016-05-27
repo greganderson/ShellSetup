@@ -3,8 +3,6 @@
 " TEST CODE
 
 
- hi Search cterm=NONE ctermfg=white ctermbg=blue
-
 
 " END TEST CODE
 
@@ -126,6 +124,12 @@ set cryptmethod=blowfish
 " Enables very easy compiling and executing c++ programs (makefile required)
 "map <F1> :!clear; make<CR> :!./a.out<CR>
 map <F1> :!clear; make driver<CR> :!./driver -f test_file.txt<CR>
+
+" Change search highlight color to blue with white lettering
+hi Search cterm=NONE ctermfg=white ctermbg=blue
+ 
+" Change folding color to blue with white lettering
+hi Folded ctermfg=White ctermbg=Blue
 
 
 
