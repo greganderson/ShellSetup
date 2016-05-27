@@ -128,8 +128,8 @@ map <F1> :!clear; make driver<CR> :!./driver -f test_file.txt<CR>
 " Change search highlight color to blue with white lettering
 hi Search cterm=NONE ctermfg=white ctermbg=blue
  
-" Change folding color to blue with white lettering
-hi Folded ctermfg=White ctermbg=Blue
+" Change folding color to black with white lettering
+hi Folded ctermfg=White ctermbg=Black
 
 
 
