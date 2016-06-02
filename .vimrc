@@ -131,6 +131,9 @@ hi Search cterm=NONE ctermfg=white ctermbg=blue
 " Change folding color to black with white lettering
 hi Folded ctermfg=White ctermbg=Black
 
+" Make it so splitting screens actually makes sense (as far as where the windows are placed)
+set splitbelow
+set splitright
 
 
 " Automatically work with curly braces
