@@ -1,4 +1,4 @@
-" Last edited: 7-1-15^^
+" Last edited: 7-1-15
 
 " TEST CODE
 
@@ -134,6 +134,9 @@ hi Folded ctermfg=White ctermbg=Black
 " Make it so splitting screens actually makes sense (as far as where the windows are placed)
 set splitbelow
 set splitright
+
+" Show line numbers in netrw (directory browser)
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 
 " Automatically work with curly braces
