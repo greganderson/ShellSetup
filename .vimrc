@@ -138,6 +138,11 @@ set splitright
 " Show line numbers in netrw (directory browser)
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
+" Commands to open directory browser, making them open on the correct split window
+cnoremap vspd Vexplore!
+cnoremap spd Hexplore
+
+
 
 " Automatically work with curly braces
 
