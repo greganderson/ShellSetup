@@ -75,6 +75,9 @@ Bundle 'gmarik/vundle'
 " Powerline plugin
 Bundle 'Lokaltog/vim-powerline'
 
+" Perl 6 plugin
+Bundle 'https://github.com/vim-perl/vim-perl'
+
 " Set symbols for powerline
 let g:Powerline_symbols = 'compatible'
 "let g:Powerline_symbols = 'unicode'
@@ -262,7 +265,7 @@ augroup END
 autocmd BufRead *.cql set syntax=cql
 
 " *.pl6 files use the perl6 coloring
-au BufRead,BufNewFile *.pl6 setfiletype perl6
+autocmd BufRead *.pl6 set syntax=perl6
 
 " Load specific settings for different file types
 
