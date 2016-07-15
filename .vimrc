@@ -261,6 +261,9 @@ augroup END
 " *.cql file syntax highlighting
 autocmd BufRead *.cql set syntax=cql
 
+" *.pl6 files use the perl6 coloring
+au BufRead,BufNewFile *.pl6 setfiletype perl6
+
 " Load specific settings for different file types
 
 
