@@ -239,7 +239,6 @@
   \def\\{, }
   {\namefont\@name}
   \vskip 2pt
-  \fullline
   \vskip 2pt
   % where do you live?
   \@ifundefined{@addressone}{%
