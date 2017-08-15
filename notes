@@ -3,3 +3,7 @@ Install grc for mysql config files to work -> https://github.com/nitso/colour-my
 
 For Vundle:
 Open vim and run :PluginInstall
+
+WAY BETTER ZSH SETUP:
+wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+Then execute install.sh
