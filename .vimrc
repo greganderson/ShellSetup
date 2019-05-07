@@ -251,6 +251,9 @@ inoremap <C-h> for (int i = 0; i < ; i++) {<CR>}<Esc>O<TAB>// TODO: loop<Esc>k^f
 " *.ino files use the .cpp coloring
 au BufRead,BufNewFile *.ino setfiletype cpp
 
+" *.template files use the .yaml coloring
+au BufNewFile,BufRead *.template setfiletype yaml
+
 " *.hive, *.hql, and *.spark files use the .sql coloring
 au BufRead,BufNewFile *.hive setfiletype sql
 au BufRead,BufNewFile *.hql setfiletype sql
