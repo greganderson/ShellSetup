@@ -1,4 +1,4 @@
-" Last edited: 7-1-15
+" Last edited: 7-17-20
 
 " TEST CODE
 
@@ -222,13 +222,8 @@ endif
 " Allows you to do sudo vim in a file after you have already entered as normal vim
 cmap w!! w !sudo tee % >/dev/null
 
-" Rainbow parentheses
-let g:rbpt_max = 16
-let g:rbpt_loadcmd_toggle = 0
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+" Rainbow parentheses: https://github.com/luochen1990/rainbow
+let g:rainbow_active = 1
 
 " Syntax highlighting for openscad files
 au BufRead,BufNewFile *.scad    setfiletype openscad
