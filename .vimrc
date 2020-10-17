@@ -90,6 +90,7 @@ syntax enable
 " No colorscheme set because terminal settings are set to solarized, so it carries over.
 "colorscheme koehler
 "colorscheme vividchalk
+colorscheme industry
 
 " Sets how far your indent is
 set shiftwidth=4
