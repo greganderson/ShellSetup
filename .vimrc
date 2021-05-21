@@ -7,51 +7,6 @@
 " END TEST CODE
 
 
-" Python code
-
-python import vim
-py << END_PYTHON
-import os
-
-# Overrides the normal mode command 'gx' to open a link in chrome
-def open_link():
-	(col, row) = vim.current.window.cursor
-	line = vim.current.buffer[col-1]
-	start = line[:row].rfind(' ')
-	if start == -1:
-		start = 0
-	line = line[start+1:]
-	end = line.find(' ')
-	if end == -1:
-		end = len(line)
-	url = line[:end]
-	os.system('google-chrome ' + url)
-
-def count():
-	b = vim.current.buffer
-	total = 0
-	for i in range(len(b)):
-		try:
-			total += int(b[i][-2:])
-		except:
-			continue
-	b[len(b)-1] = str(total)
-
-# Converts char values into the actual char
-def convert():
-	b = vim.current.buffer
-	for i in range(len(b)):
-		b[i] = chr(int(b[i]))
-
-END_PYTHON
-
-" Overrides the normal mode command 'gx' to open a link in chrome
-" The stuff after calling the python function is to make the vim
-" content reappear.  It goes away for some reason.
-nnoremap gx :py open_link()<CR>ggVG<ESC><ESC><C-o><C-o>
-
-" https://www.google.com/search?q=put+python+code+in+vimrc&oq=put+python+code+in+vimrc&aqs=chrome..69i57.3123j0j7&sourceid=chrome&es_sm=0&ie=UTF-8#q=put+python+script+in+vimrc
-
 
 " Execute pathogen, making sure all plugins are installed.
 execute pathogen#infect()

@@ -123,12 +123,10 @@ alias watch="watch -c"
 alias grep="grep --color"
 alias l="ls"
 alias gs="git status"
+alias k="kubectl"
 
 # Screen
 alias screen="screen -h 10000"
-
-# Racket
-alias racket="racket -il readline"
 
 eval `dircolors ~/.dir_colors`
 
