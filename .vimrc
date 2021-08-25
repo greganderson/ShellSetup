@@ -53,6 +53,9 @@ set shiftwidth=4
 " Seems to change tabs at the start of opening your file
 set tabstop=4
 
+" Spaces instead of tabs
+set expandtab
+
 " Tabs after certain characters made for programming, including { and other keywords.  Also keeps the same tabbing
 " from line before when starting a newline (unless newline ended with { or some other keyword)
 set smarttab autoindent
