@@ -114,6 +114,14 @@ fi
 export PATH=$PATH:/home/greg/scripts
 export PATH=$PATH:/home/greg/bin
 
+# Kubernetes
+# Fill in with kubeconfig file paths
+export KUBECONFIG=""
+# Merge into single file
+kubectl config view --merge --flatten > config
+# kubectx doesn't support multiple files in KUBECONFIG yet :(
+unset KUBECONFIG
+
 # Just for handiness
 alias mv="mv -i"
 alias cp="cp -i"
