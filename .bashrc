@@ -115,9 +115,11 @@ export PATH=$PATH:/home/greg/scripts
 export PATH=$PATH:/home/greg/bin
 
 # Kubernetes
-# Fill in with kubeconfig file paths
-export KUBECONFIG=""
-# Merge into single file
+# Load all kubeconfigs (assuming they start with "config-")
+kubeconfigs=""
+for file in `ls config-*`; do kubeconfigs+=":$file"; done
+export KUBECONFIG=${kubeconfigs:1}
+# Merge kubeconfigs into one file for kubectx
 kubectl config view --merge --flatten > config
 # kubectx doesn't support multiple files in KUBECONFIG yet :(
 unset KUBECONFIG
