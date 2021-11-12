@@ -120,7 +120,7 @@ kubeconfigs=""
 for file in `ls ${HOME}/.kube/config-*`; do kubeconfigs+=":$file"; done
 export KUBECONFIG=${kubeconfigs:1}
 # Merge kubeconfigs into one file for kubectx
-kubectl config view --merge --flatten > config
+kubectl config view --merge --flatten > ${HOME}/.kube/config
 # kubectx doesn't support multiple files in KUBECONFIG yet :(
 unset KUBECONFIG
 
