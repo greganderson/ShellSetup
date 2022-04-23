@@ -133,6 +133,7 @@ alias watch="watch -c"
 alias grep="grep --color"
 alias l="ls"
 alias gs="git status"
+alias gb="git branch"
 alias k="kubectl"
 
 # Screen
