@@ -1,9 +1,46 @@
-Install grc for mysql config files to work -> https://github.com/nitso/colour-mysql-console
+This setup will need to be adjusted for windows use, but it's _really_ good.
+
+# Mac setup
+* Install homebrew
+    - exa
+    - bat
+    - chafa
+    - exiftool
+    - fd
+    - --cask temurin
+    - graphviz
+    - helm
+* Install fzf (oh-my-zsh)
+* Install fzf-tab (oh-my-zsh)
+    - Add config sugestions to ~/.fzf.zsh
+    - Add enable-fzf-tab to config
+* Make sure `$FZF_DEFAULT_COMMAND` is set to `fd --type f --hidden --follow --exclude .git`
+* Install tmuxinator
+* vscode extension:
+    - plantuml
 
 
-For Vundle:
-Open vim and run :PluginInstall
+# Commands
 
-WAY BETTER ZSH SETUP:
-wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-Then execute install.sh
+## Vim
+* C-p - fuzzy search files
+* <space>-f - project wide grep
+* :bd - close buffer
+* C-w v/s - (vertical/horizontal split)
+* C-b - open buffers
+* K - show documentation for thing you're on
+* gr - see references
+* gd - go to definition
+* C-o - go back to where you were last
+* C-6 - flip between last two buffers
+* :e . - open current directory
+
+## Tmux
+* tm s tw|cookie|appsvc - start a tmux session
+* C-<space> s - show sessions
+    - h/l (left/right) to expand a session
+* C-<space> d - detach
+* C-<space> 1|2|3 - switch to specific window
+* C-<space> :kill-session - kills the session!
+* tmux list-sessions
+* tmux kill-session -t <name>
