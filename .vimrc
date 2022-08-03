@@ -47,6 +47,11 @@ nnoremap ' `
 nnoremap ` '
 
 syntax on " Enable syntax highlighting
+
+" make sure syntax highlighting stays in sync
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 filetype on " Enable filetype detection
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
@@ -117,12 +122,16 @@ call plug#begin('~/.vim/plugged')
 
 " Theme Plugin
 Plug 'morhetz/gruvbox'
+Plug 'bignimbus/pop-punk.vim'
 
 " Git usage
 Plug 'tpope/vim-fugitive'
+Plug 'shumphrey/fugitive-gitlab.vim'
 
-" Status bar
-Plug 'itchyny/lightline.vim'
+" Status Bar
+"Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'bignimbus/you-are-here.vim'
 
 " Easy Traversal of directories
 Plug 'tpope/vim-vinegar'
@@ -137,6 +146,24 @@ Plug 'stsewd/fzf-checkout.vim'
 
 " Code Completion
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
+
+" JavaScript syntax highlighting
+Plug 'jsdoc/jsdoc'
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_flow = 1
+
+" Typescript syntax highlighting
+Plug 'leafgarland/typescript-vim'
+
+" JSX syntax highlighting
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+
+" GraphQL syntax highlighting
+Plug 'jparise/vim-graphql'
 
 " Snippets
 Plug 'SirVer/ultisnips'
@@ -223,6 +250,15 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+" If prettier or eslint is there, enable it in vim
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
@@ -354,10 +390,12 @@ let g:vdebug_keymap = {
 \    "eval_visual" : "<Leader>e"
 \}
 
+
 " Allows Vdebug to bind to all interfaces.
 let g:vdebug_options = {}
-let g:vdebug_options["port"] = 9003
-" let g:vdebug_options["server"] = '127.0.0.1'
+let g:vdebug_options["port"] = 9000
+"let g:vdebug_options["server"] = '127.0.0.1'
+"let g:vdebug_options["server"] = '172.21.0.1'
 
 " Stops execution at the first line.
 let g:vdebug_options['break_on_open'] = 0
@@ -425,6 +463,9 @@ let g:lightline = {
       \ },
       \ }
 
+" for the airline theme - note the underscore instead of the hyphen
+let g:airline_theme = 'pop_punk'
+
 " Vim Fugitive
 nmap <leader>gf :diffget //3<CR>
 nmap <leader>gj :diffget //2<CR>
@@ -470,8 +511,8 @@ set showmatch		" Show matching brackets.
 " Change window size much more quickly and easily
 if bufwinnr(1)
 	" Change for vertical screens
-	map + <C-w>+
-	map - <C-w>-
+	"map + <C-w>+
+	"map - <C-w>-
 	" Change for horizontal screens
 	map , <C-w><
 	map . <C-w>>
