@@ -5,13 +5,13 @@ export PATH=$PATH:$HOME/bin/ripgrep
 
 # Kubernetes
 # Load all kubeconfigs (assuming they start with "config-")
-kubeconfigs=""
-for file in `ls ${HOME}/.kube/config-*`; do kubeconfigs+=":$file"; done
-export KUBECONFIG=${kubeconfigs:1}
+#kubeconfigs=""
+#for file in `ls ${HOME}/.kube/config-*`; do kubeconfigs+=":$file"; done
+#export KUBECONFIG=${kubeconfigs:1}
 # Merge kubeconfigs into one file for kubectx
-kubectl config view --merge --flatten > ${HOME}/.kube/config
+#kubectl config view --merge --flatten > ${HOME}/.kube/config
 # kubectx doesn't support multiple files in KUBECONFIG yet :(
-unset KUBECONFIG
+#unset KUBECONFIG
 
 # Just for handiness
 alias mv="mv -i"
@@ -24,7 +24,7 @@ alias l="ls"
 alias gs="git status"
 alias gb="git branch"
 alias k="kubectl"
-alias tm="$HOME/.gem/ruby/2.6.0/gems/tmuxinator-3.0.2/bin/tmuxinator"
+alias tm="/usr/local/bin/tmuxinator"
 
 man() {
   env LESS_TERMCAP_mb=$'\E[01;31m' \
@@ -41,8 +41,5 @@ export EDITOR="vim"
 
 function cd () { builtin cd "$@" && ls; }
 
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi
 ### GREG END
 #export PATH=$PATH:
