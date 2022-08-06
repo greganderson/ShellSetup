@@ -20,8 +20,6 @@ set laststatus=2       " Show status line always
 set ignorecase
 
 " Settings recommended by COC.vim
-set nobackup " Some servers have issues with backup files, see #649.
-set nowritebackup
 set cmdheight=2  " Give more space for displaying messages.
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -435,21 +433,6 @@ nnoremap <silent><leader>doc :call pdv#DocumentWithSnip()<CR>
 
 " Ultisnips
 let g:UltiSnipsExpandTrigger = "<nop>" " Ultisnips default tab assignment conflicts with COC's tab assignment
-
-" Backup Vimrc
-set backup
-
-" Where to store backups
-set backupdir=~/.vim/backup//
-
-" Make backup before overwriting the current buffer
-set writebackup
-
-" Overwrite the original backup file
-set backupcopy=yes
-
-" Meaningful backup name, i.e. filename@2015-04-05.14:59
-au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
 
 " Lightline status line plugin configuration
 let g:lightline = {
