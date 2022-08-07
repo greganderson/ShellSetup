@@ -1,5 +1,7 @@
 This setup will need to be adjusted for windows use, but it's _really_ good.
 
+Python language server: https://github.com/fannheyward/coc-pyright
+
 Helpful link for language servers for javascript: https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
 
 # Mac setup
