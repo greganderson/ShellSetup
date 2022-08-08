@@ -1,0 +1,13 @@
+# ~/.config/tmuxinator
+
+name: name-to-display
+root: ~/code/name-of-project
+
+pre_window: source .env/bin/activate
+
+windows:
+  - editor:
+    - vim .
+  - repl:
+    - python
+  - shell:
