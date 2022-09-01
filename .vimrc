@@ -57,6 +57,7 @@ autocmd FileType python setlocal tabstop=4 softtabstop=0 expandtab shiftwidth=4 
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType typescriptreact setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType php setlocal expandtab shiftwidth=4 tabstop=4
 autocmd FileType yml setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2
