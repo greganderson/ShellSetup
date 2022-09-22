@@ -192,6 +192,9 @@ cmap gb :<C-u>call gitblame#echo()
 Plug 'moll/vim-bbye'
 cmap bd Bdelete
 
+" Select lines, then `gc` to toggle comment
+Plug 'vim-scripts/tComment'
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
