@@ -20,6 +20,8 @@ set laststatus=2       " Show status line always
 set ignorecase
 
 " Settings recommended by COC.vim
+set nobackup " Some servers have issues with backup files, see #649.
+set nowritebackup
 set cmdheight=2  " Give more space for displaying messages.
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -61,6 +63,7 @@ autocmd FileType typescriptreact setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType php setlocal expandtab shiftwidth=4 tabstop=4
 autocmd FileType yml setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType terraform setlocal expandtab shiftwidth=2 tabstop=2
 set noautochdir
 
 set clipboard+=unnamedplus
@@ -143,6 +146,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
 
+Plug 'vim-scripts/tComment'
+
 " Code Completion
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 let g:coc_global_extensions = [
@@ -191,9 +196,6 @@ cmap gb :<C-u>call gitblame#echo()
 " Closing a buffer without closing the window
 Plug 'moll/vim-bbye'
 cmap bd Bdelete
-
-" Select lines, then `gc` to toggle comment
-Plug 'vim-scripts/tComment'
 
 call plug#end()
 
@@ -399,6 +401,8 @@ let g:vdebug_options["port"] = 9000
 "let g:vdebug_options["server"] = '127.0.0.1'
 "let g:vdebug_options["server"] = '172.21.0.1'
 
+let g:vdebug_options["debug_file"] = '/Users/ganderson/code/vdebug.log'
+
 " Stops execution at the first line.
 let g:vdebug_options['break_on_open'] = 0
 " let g:vdebug_options['max_children'] = 128
@@ -408,6 +412,12 @@ let g:vdebug_options['break_on_open'] = 0
 
 " IDE_KEY
 " let g:vdebug_options['ide_key'] = 'XDEBUG_SESSION'
+
+"
+" " Sync the remote path ('/remote/path') with the local path ('/local/path')
+"let g:vdebug_options['path_maps'] = {
+"\   '/app': '/Users/ganderson/code/profiles-service/'
+"\   }
 
 " Helpful Things
 " Change selected text from NameLikeThis to name_like_this.
@@ -438,6 +448,21 @@ nnoremap <silent><leader>doc :call pdv#DocumentWithSnip()<CR>
 " Ultisnips
 let g:UltiSnipsExpandTrigger = "<nop>" " Ultisnips default tab assignment conflicts with COC's tab assignment
 
+"" Backup Vimrc
+"set backup
+"
+"" Where to store backups
+"set backupdir=~/.vim/backup//
+"
+"" Make backup before overwriting the current buffer
+"set writebackup
+"
+"" Overwrite the original backup file
+"set backupcopy=yes
+"
+"" Meaningful backup name, i.e. filename@2015-04-05.14:59
+"au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
+"
 " Lightline status line plugin configuration
 let g:lightline = {
       \ 'colorscheme': 'wombat',
