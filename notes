@@ -16,6 +16,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - graphviz
     - helm
     - tmuxinator
+        o There are autocompletion settings you can get from the tmuxinator site, grab them
 * Install fzf (oh-my-zsh)
 * Install fzf-tab (oh-my-zsh)
     - Add config sugestions to ~/.fzf.zsh
