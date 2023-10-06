@@ -26,6 +26,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
 * Make sure `$FZF_DEFAULT_COMMAND` is set to `fd --type f --hidden --follow --exclude .git`
 * vscode
     - Run cmd+shift+p, then type "shell", then select "Shell Command: Install 'code' in PATH"
+    - Go to the "Tree Indent" setting and change the pixel indent to something non-stupid like 30
     - Extensions:
         o plantuml
 
