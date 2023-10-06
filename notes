@@ -7,6 +7,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
 # Mac setup
 * Install Raycast - this has window snapping and clipboard history
 * Install homebrew
+    - vim
     - exa
     - bat
     - chafa
