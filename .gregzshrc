@@ -16,6 +16,7 @@ export PATH=/opt/homebrew/bin:$PATH
 #unset KUBECONFIG
 
 # Just for handiness
+alias python=python3
 alias mv="mv -i"
 alias cp="cp -i"
 alias bashrc="pwd >> ~/.bashrc && vim ~/.bashrc && source ~/.bashrc"
