@@ -24,8 +24,10 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - Add config sugestions to ~/.fzf.zsh
     - Add enable-fzf-tab to config
 * Make sure `$FZF_DEFAULT_COMMAND` is set to `fd --type f --hidden --follow --exclude .git`
-* vscode extension:
-    - plantuml
+* vscode
+    - Run cmd+shift+p, then type "shell", then select "Shell Command: Install 'code' in PATH"
+    - Extensions:
+        o plantuml
 
 
 # Commands
