@@ -8,6 +8,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
 * Install Raycast - this has window snapping and clipboard history
 * Install homebrew
     - vim
+    - python
     - exa
     - bat
     - chafa
