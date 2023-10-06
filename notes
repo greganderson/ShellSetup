@@ -15,12 +15,12 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - --cask temurin
     - graphviz
     - helm
+    - tmuxinator
 * Install fzf (oh-my-zsh)
 * Install fzf-tab (oh-my-zsh)
     - Add config sugestions to ~/.fzf.zsh
     - Add enable-fzf-tab to config
 * Make sure `$FZF_DEFAULT_COMMAND` is set to `fd --type f --hidden --follow --exclude .git`
-* Install tmuxinator
 * vscode extension:
     - plantuml
 
