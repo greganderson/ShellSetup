@@ -4,25 +4,55 @@ Python language server: https://github.com/fannheyward/coc-pyright
 
 Helpful link for language servers for javascript: https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
 
+
+
 # Mac setup
-* Install Raycast - this has window snapping and clipboard history
-* Install homebrew
-    - vim
-    - python
-    - exa
-    - bat
-    - chafa
-    - exiftool
-    - fd
-    - --cask temurin
-    - graphviz
-    - helm
-    - tmuxinator
-        o There are autocompletion settings you can get from the tmuxinator site, grab them
-* Install fzf (oh-my-zsh)
-* Install fzf-tab (oh-my-zsh)
-    - Add config sugestions to ~/.fzf.zsh
-    - Add enable-fzf-tab to config
+
+* Appearance/System theme
+* Accessibility - three finger drag
+* Sign in with Apple ID
+* Key repeating - speed and character changer thingy
+* General/Date & Time (use spotlight to get to the seconds and showing day of week all the time) - 24 hour, seconds, set timezone by location show day of week regardless or whatever
+* Touch login
+* Sign into google drive and get key for keepass
+* Clean up dock
+* Install
+    - Arc
+    - Chrome
+    - iTerm
+    - Karabiner (key remapper)
+    - OneDrive
+    - Raycast - window snapping and clipboard history
+    - Vivaldi
+    - VS Code
+    - Telegram
+    - Obsidian
+    - Docker
+    - k8s
+    - k9s
+    - Keepass
+    - Strongbox - keepass
+    - Run `git` from the terminal, this triggers the developer package installation thing for macs
+    - fzf-zsh-plugin
+    - powerline10k
+    - node
+    - Homebrew
+        o vim
+        o python
+        o exa
+        o bat
+        o chafa
+        o exiftool
+        o fd
+        o --cask temurin
+        o graphviz
+        o helm
+        o wget
+        o tmuxinator
+	o fzf (oh-my-zsh)
+	o fzf-tab (oh-my-zsh)
+	    ^ Add config sugestions to ~/.fzf.zsh
+	    ^ Add enable-fzf-tab to config
 * Make sure `$FZF_DEFAULT_COMMAND` is set to `fd --type f --hidden --follow --exclude .git`
 * vscode
     - Run cmd+shift+p, then type "shell", then select "Shell Command: Install 'code' in PATH"
