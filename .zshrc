@@ -74,7 +74,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 # NOTE: If you're getting problems with `unknown option: --pointer=`, then you are probably
 # not using the right fzf. Delete the fzf* files from /usr/bin or wherever they are.
-plugins=(git fzf-zsh-plugin fzf-tab)
+plugins=(git fzf-zsh-plugin fzf-tab tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
