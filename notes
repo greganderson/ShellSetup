@@ -33,6 +33,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - Keepass
     - Strongbox - keepass
     - Outlook (optional)
+        o Disable focused inbox
     - Run `git` from the terminal, this triggers the developer package installation thing for macs
     - fzf-zsh-plugin
     - powerline10k
