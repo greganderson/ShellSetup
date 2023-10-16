@@ -32,6 +32,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - k9s
     - Keepass
     - Strongbox - keepass
+    - Outlook (optional)
     - Run `git` from the terminal, this triggers the developer package installation thing for macs
     - fzf-zsh-plugin
     - powerline10k
