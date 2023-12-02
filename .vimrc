@@ -233,27 +233,20 @@ nnoremap <silent> <Leader>f :Rg<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => COC.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
+function! SafeCheckBackSpace() abort
+  if col('.') <= 1
+    return 1
+  endif
+  let line = getline('.')
   let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+  return col <= len(line) && line[col - 1] =~# '\s'
 endfunction
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      \ SafeCheckBackSpace() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
 
 " If prettier or eslint is there, enable it in vim
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
