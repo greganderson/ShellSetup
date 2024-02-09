@@ -20,6 +20,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - Arc
     - Chrome
     - iTerm
+        o Go to profiles->terminal and disable "Show mark indicators"
     - Karabiner (key remapper)
     - Scroll Reverser (natural scrolling on trackpad, but not on mouse)
     - OneDrive
