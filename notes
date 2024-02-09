@@ -53,6 +53,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
         o helm
         o wget
         o tmuxinator
+	o ripgrep
 	o fzf (oh-my-zsh)
 	o fzf-tab (oh-my-zsh)
 	    ^ Add config sugestions to ~/.fzf.zsh
