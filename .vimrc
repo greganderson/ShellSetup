@@ -85,7 +85,7 @@ au BufNewFile,BufRead *.cfc,*.cfm
 
 " Gruvbox Theme
 set background=dark    " Setting dark mode
-autocmd vimenter * ++nested colorscheme gruvbox
+autocmd vimenter * ++nested colorscheme wildcharm
 
 " When started as "evim", evim.vim will already have done these settings, bail
 " out.
