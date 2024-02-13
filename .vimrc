@@ -9,6 +9,8 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "    for OpenVMS:  sys$login:.vimrc
 
+" When opening a directory, `r` brings up the controls menu thing
+
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
