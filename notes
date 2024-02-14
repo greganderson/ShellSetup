@@ -46,6 +46,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
         o exa
         o bat
         o chafa
+	o direnv
         o exiftool
         o fd
         o --cask temurin
