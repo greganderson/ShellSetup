@@ -9,6 +9,12 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "    for OpenVMS:  sys$login:.vimrc
 
+" TEST
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[1 q"
+" END TEST
+
+
 " When opening a directory, `r` brings up the controls menu thing
 
 nnoremap <SPACE> <Nop>
