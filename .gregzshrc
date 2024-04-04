@@ -27,7 +27,9 @@ alias l="ls"
 alias gs="git status"
 alias gb="git branch"
 alias k="kubectl"
-alias tm="/usr/local/bin/tmuxinator"
+alias tm="/opt/homebrew/bin/tmuxinator"
+alias act="source .venv/bin/activate"
+alias dixie="cd ~/code/greg/dixie-tech"
 
 man() {
   env LESS_TERMCAP_mb=$'\E[01;31m' \
