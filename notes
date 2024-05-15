@@ -21,7 +21,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - Chrome
     - iTerm
         o Go to profiles->terminal and disable "Show mark indicators"
-    - Karabiner (key remapper)
+    - Karabiner (key remapper) - **NOTE** Looks like you can change these keybindings in System Settings now, need to verify
     - Scroll Reverser (natural scrolling on trackpad, but not on mouse)
     - OneDrive
     - Raycast - window snapping and clipboard history
