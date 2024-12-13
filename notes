@@ -11,7 +11,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
 * Appearance/System theme
 * Accessibility - three finger drag
 * Sign in with Apple ID
-* Key repeating - speed and character changer thingy
+* Key repeating - `defaults write -g KeyRepeat -int 1 && defaults write -g InitialKeyRepeat -int 12`
 * General/Date & Time (use spotlight to get to the seconds and showing day of week all the time) - 24 hour, seconds, set timezone by location show day of week regardless or whatever
 * Touch login
 * Sign into google drive and get key for keepass
