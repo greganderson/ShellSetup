@@ -42,6 +42,8 @@ man() {
   man "$@"
 }
 
+export MANPAGER='nvim +Man!'
+
 export EDITOR="vim"
 
 function cd () { builtin cd "$@" && ls; }
