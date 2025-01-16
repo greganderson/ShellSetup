@@ -1,0 +1,10 @@
+# ~/.config/tmuxinator
+
+name: Grading
+root: ~/code/greg/dixie-tech/grading
+
+pre_window: source .venv/bin/activate
+
+windows:
+  - shell:
+  - shell:

@@ -1,0 +1,7 @@
+# ~/.config/tmuxinator
+
+name: Miscellaneous Work
+root: ~/code/greg/dixie-tech/misc
+
+windows:
+  - editor:

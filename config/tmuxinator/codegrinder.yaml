@@ -1,0 +1,16 @@
+# ~/.config/tmuxinator
+
+name: CodeGrinder
+root: ~/code/greg/dixie-tech/codegrinder-assignments/web1000
+
+windows:
+  - code:
+      layout: tiled
+      panes:
+        - 
+        - cd ~/code/greg/dixie-tech/codegrinder/files; vim .
+        - 
+        - 
+  - testing:
+  - server:
+  - codegrinder-source:

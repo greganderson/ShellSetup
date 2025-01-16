@@ -1,0 +1,13 @@
+# ~/.config/tmuxinator
+
+name: Easel
+root: ~/code/greg/easel-py
+
+pre_window: source .env/bin/activate
+
+windows:
+  - editor:
+    - vim .
+  - repl:
+    - ptpython
+  - shell:

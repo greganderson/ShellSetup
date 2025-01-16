@@ -1,0 +1,13 @@
+# ~/.config/tmuxinator
+
+name: Settlers of Catan
+root: ~/code/greg/dixie-tech/games/settlers_of_catan
+
+pre_window: source .env/bin/activate
+
+windows:
+  - editor:
+    - vim .
+  - repl:
+    - ptpython
+  - shell:
