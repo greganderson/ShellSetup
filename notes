@@ -41,6 +41,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - fzf-zsh-plugin
     - powerline10k
     - node
+    - Zeal (brew install all the dependencies, then build (it worked the first time!!))
     - Homebrew
         o vim
         o python
