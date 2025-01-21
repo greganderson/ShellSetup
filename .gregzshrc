@@ -30,6 +30,9 @@ alias k="kubectl"
 alias tm="/opt/homebrew/bin/tmuxinator"
 alias act="source .venv/bin/activate"
 alias dixie="cd ~/code/greg/dixie-tech"
+alias cat=bat
+alias vim=nvim
+alias cvim=/usr/bin/vim
 
 man() {
   env LESS_TERMCAP_mb=$'\E[01;31m' \
