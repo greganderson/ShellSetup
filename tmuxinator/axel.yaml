@@ -1,0 +1,12 @@
+# ~/.config/tmuxinator
+
+name: Axel Programming School
+root: ~/code/school/basics
+
+pre_window: source .env/bin/activate
+
+windows:
+  - editor:
+  - repl:
+    - ptpython
+  - shell:

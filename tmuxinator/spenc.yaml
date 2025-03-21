@@ -1,0 +1,7 @@
+# ~/.config/tmuxinator
+
+name: Spencer AI
+root: ~/code/greg/Transcription-Search-App
+
+windows:
+  - editor:

@@ -1,0 +1,7 @@
+# ~/.config/tmuxinator
+
+name: Pharma EDU
+root: ~/code/greg/dixie-tech/pharma-edu/
+
+windows:
+  - shell:

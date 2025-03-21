@@ -1,0 +1,7 @@
+# ~/.config/tmuxinator
+
+name: OTW
+root: ~/code/greg/otw
+
+windows:
+  - shell:
