@@ -1,8 +1,0 @@
-# ~/.config/tmuxinator
-
-name: Udemy TypeScript
-root: ~/code/greg/udemy/typescript
-
-windows:
-  - editor:
-  - shell:

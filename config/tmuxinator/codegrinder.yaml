@@ -12,5 +12,8 @@ windows:
         - 
         - 
   - testing:
+    - cd ~/WEB 001000
   - server:
   - codegrinder-source:
+  - scaffold:
+    - cd ~/code/greg/dixie-tech/scaffold

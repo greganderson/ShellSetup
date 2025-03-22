@@ -5,3 +5,7 @@ root: ~/code/greg/dixie-tech
 
 windows:
   - editor:
+      layout: even-horizontal
+      panes:
+        - 
+        - 

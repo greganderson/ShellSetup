@@ -1,7 +1,0 @@
-# ~/.config/tmuxinator
-
-name: Udemy Frontend Course
-root: ~/code/greg/udemy/htmlcss/
-
-windows:
-  - editor:
