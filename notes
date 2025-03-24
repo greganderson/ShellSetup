@@ -17,7 +17,13 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
 * Sign into google drive and get key for keepass
 * Clean up dock
 * Install
-    - Arc
+    - Note: When installing things, you might see an error about not being trustworthy. This command bypasses that 🤷: xattr -d com.apple.quarantine ~/bin/nvim/bin/nvim
+    - Golang (do this first and verify you can run `go`, maybe that'll help avoid the pain and suffering of some neovim plugin installs creating lockfiles and not deleting them)
+    - oh-my-zsh
+    - powerline10k
+    - Neovim
+    - AstroVim (dependencies are listed on the astrovim site)
+        - ripgrep (brew)
     - Chrome
     - iTerm
         o Go to profiles->terminal and disable "Show mark indicators"
@@ -26,7 +32,6 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - Scroll Reverser (natural scrolling on trackpad, but not on mouse)
     - OneDrive
     - Raycast - window snapping and clipboard history
-    - Vivaldi
     - VS Code
     - Telegram
     - Obsidian
@@ -41,28 +46,28 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - fzf-zsh-plugin
     - powerline10k
     - node
-    - Zeal (brew install all the dependencies, then build (it worked the first time!!))
+    - Zeal (brew install all the dependencies, then build (it worked the first time 😱))
+    - fzf-tab
     - Homebrew
         o vim
         o python
-        o exa
+        o exa (didn't work)
         o bat
         o chafa
-	o direnv
+	    o direnv
         o exiftool
         o fd
         o --cask temurin
         o graphviz
         o helm
         o wget
+        o tmux
+            - Run <leader>-I to install plugins after moving in the ~/.tmux.conf (yes, that is a capital I (probably))
         o tmuxinator
-	o ripgrep
-	o fzf (oh-my-zsh)
-	o fzf-tab (oh-my-zsh)
-	    ^ Add config sugestions to ~/.fzf.zsh
-	    ^ Add enable-fzf-tab to config
+	    o ripgrep
+	    o fzf (don't forget to do the setup from the readme: https://github.com/junegunn/fzf?tab=readme-ov-file#setting-up-shell-integration)
 * Make sure `$FZF_DEFAULT_COMMAND` is set to `fd --type f --hidden --follow --exclude .git`
-* vscode
+* vscode/cursor
     - Run cmd+shift+p, then type "shell", then select "Shell Command: Install 'code' in PATH"
     - Go to the "Tree Indent" setting and change the pixel indent to something non-stupid like 30
     - Extensions:
