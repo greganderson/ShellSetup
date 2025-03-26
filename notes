@@ -68,6 +68,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
 	    o ripgrep
 	    o fzf (don't forget to do the setup from the readme: https://github.com/junegunn/fzf?tab=readme-ov-file#setting-up-shell-integration)
 * Make sure `$FZF_DEFAULT_COMMAND` is set to `fd --type f --hidden --follow --exclude .git`
+* Edit ~/.p10k.zsh and change truncate_to_unique to truncate_to_last
 * vscode/cursor
     - Run cmd+shift+p, then type "shell", then select "Shell Command: Install 'code' in PATH"
     - Go to the "Tree Indent" setting and change the pixel indent to something non-stupid like 30
