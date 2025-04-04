@@ -76,6 +76,18 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - Go to the "Tree Indent" setting and change the pixel indent to something non-stupid like 30
     - Extensions:
         o plantuml
+    - Vim settings:
+        ```
+        ...
+        "vim.insertModeKeyBindings": [
+            {
+                "before": ["j", "k"],
+                "after": ["<Esc>"]
+            }
+        ],
+        "vim.useSystemClipboard": true,
+        ...
+        ```
 
 
 # Commands
