@@ -25,6 +25,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - oh-my-zsh
     - powerline10k
     - Neovim
+        o Use repo for configs
     - AstroVim (dependencies are listed on the astrovim site)
         - ripgrep (brew)
     - Chrome
