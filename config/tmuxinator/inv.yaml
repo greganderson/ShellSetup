@@ -1,7 +1,0 @@
-# ~/.config/tmuxinator
-
-name: Inventory Tracker
-root: ~/code/greg/inventory-tracker
-
-windows:
-  - shell:

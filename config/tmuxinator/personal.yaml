@@ -1,7 +1,0 @@
-# ~/.config/tmuxinator
-
-name: Personal Work
-root: ~/code/greg/
-
-windows:
-  - shell:

@@ -1,7 +1,0 @@
-# ~/.config/tmuxinator
-
-name: Web BBQ
-root: ~/code/greg/webbbq
-
-windows:
-  - shell:
