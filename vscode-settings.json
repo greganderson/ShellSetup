@@ -1,0 +1,11 @@
+{
+    "editor.dropIntoEditor.preferences": [],
+    "workbench.tree.indent": 30,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.useSystemClipboard": true
+}
