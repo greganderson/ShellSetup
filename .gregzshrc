@@ -33,6 +33,8 @@ alias dixie="cd ~/code/greg/dixie-tech"
 alias cat=bat
 alias vim=nvim
 alias cvim=/usr/bin/vim
+# For class, since code takes me to cursor
+alias vscode=/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
 
 man() {
   env LESS_TERMCAP_mb=$'\E[01;31m' \
