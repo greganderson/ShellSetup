@@ -1,0 +1,40 @@
+Changed ~/.config/hypr/bindings.conf:
+unbind = SUPER, F
+bindd = SUPER, F, fullscreen 1
+
+This makes it so instead of doing fullscreen, it maximizes
+
+
+I need to store my ~/.config/hypr/*.conf files
+
+
+## Programs I've installed
+
+Pacman:
+* ruby
+* ruby-erb
+* tmux
+* python-debugpy
+* keyd (I think, it might have already been installed)
+
+Ruby (`gem install`):
+* tmuxinator
+
+Manual:
+* nvim-dap
+* fzf
+
+
+## Configure
+
+* keys -> /etc/keyd/default.conf (I should save a copy of this)
+  - Run `sudo keyd reload` after making a change
+* OneDrive
+  - I'm not sure what I did to install onedrive, but here are some configurations
+  - ~/.config/systemd/user/onedrive-sync.service and ~/.config/systemd/user/onedrive-sync.timer
+  - `systemctl --user daemon-reload`
+  - `systemctl --user enable --now onedrive-sync.timer`
+
+## Problems
+
+* Vim setup: treesitter was causing problems, but `:Lazy sync` seems to have resolved them. I think.
