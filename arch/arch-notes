@@ -16,6 +16,7 @@ Pacman:
 * tmux
 * python-debugpy
 * keyd (I think, it might have already been installed)
+* direnv
 
 Ruby (`gem install`):
 * tmuxinator
