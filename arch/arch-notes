@@ -35,6 +35,8 @@ Manual:
   - ~/.config/systemd/user/onedrive-sync.service and ~/.config/systemd/user/onedrive-sync.timer
   - `systemctl --user daemon-reload`
   - `systemctl --user enable --now onedrive-sync.timer`
+* tmux-resurrect
+  - Run this command so saving environments actually works: `mkdir -p ~/.tmux/resurrect && set -g @resurrect-dir '/home/greg/.tmux/resurrect'`
 
 ## Problems
 
