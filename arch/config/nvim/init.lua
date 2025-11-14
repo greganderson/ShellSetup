@@ -18,8 +18,8 @@ end
 vim.g.clipboard = {
   name = "wl-clipboard",
   copy = {
-    ["+"] = "wl-copy -n",
-    ["*"] = "wl-copy -n",
+    ["+"] = "wl-copy",
+    ["*"] = "wl-copy",
   },
   paste = {
     ["+"] = "wl-paste -n",
@@ -27,6 +27,7 @@ vim.g.clipboard = {
   },
   cache_enabled = 0,
 }
+
 -- ensure you still want unnamedplus behavior:
 vim.opt.clipboard = "unnamedplus"
 
