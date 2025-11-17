@@ -19,6 +19,9 @@ Manual:
 * nvim-dap
 * fzf
 
+Forgot-where-it-came-from:
+* envycontrol
+
 
 ## Configure
 
@@ -34,8 +37,9 @@ Manual:
 * External monitors
   - Run `intel-gpu-dev-path.sh`
   - Copy `.config/uwsm` files over (if you haven't already)
+* Run `sudo envycontrol -s nvidia` -> this lets me use multiple monitors at the same time, though it isn't ideal (pretty sure it nullifies the above step :()
 * Move `.config` files over
-* Move `monitor-hotplug.sh` to `~/bin` or wherever makes sense (need this when plugging in the TV via HDMI (also this should probably become a udev rule))
+* Move `monitor-hotplug.sh` to `~/bin` or wherever makes sense
 
 ## Problems
 
