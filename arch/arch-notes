@@ -1,12 +1,6 @@
-Changed ~/.config/hypr/bindings.conf:
-unbind = SUPER, F
-bindd = SUPER, F, fullscreen 1
+# Arch Setup
 
-This makes it so instead of doing fullscreen, it maximizes
-
-
-I need to store my ~/.config/hypr/*.conf files
-
+Notes for setting up a new Omarchy system.
 
 ## Programs I've installed
 
@@ -37,6 +31,10 @@ Manual:
   - `systemctl --user enable --now onedrive-sync.timer`
 * tmux-resurrect
   - After setting up tmux-resurrect, run this command so saving environments actually works: `mkdir -p ~/.tmux/resurrect && set -g @resurrect-dir '/home/greg/.tmux/resurrect'`
+* External monitors
+  - Run `intel-gpu-dev-path.sh`
+  - Copy `.config/uwsm` files over (if you haven't already)
+* Move `.config` files over
 
 ## Problems
 
