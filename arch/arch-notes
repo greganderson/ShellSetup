@@ -25,7 +25,7 @@ Forgot-where-it-came-from:
 
 ## Configure
 
-* keys -> /etc/keyd/default.conf (I should save a copy of this)
+* keys -> /etc/keyd/default.conf (I saved a copy of this, just rename it and put it in place)
   - Run `sudo keyd reload` after making a change
 * OneDrive
   - I'm not sure what I did to install onedrive, but here are some configurations
