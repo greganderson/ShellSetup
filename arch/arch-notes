@@ -9,7 +9,7 @@ Pacman:
 * ruby-erb
 * tmux
 * python-debugpy
-* keyd (I think, it might have already been installed)
+* keyd
 * direnv
 
 Ruby (`gem install`):
@@ -40,6 +40,7 @@ Forgot-where-it-came-from:
 * Run `sudo envycontrol -s nvidia` -> this lets me use multiple monitors at the same time, though it isn't ideal (pretty sure it nullifies the above step :()
 * Move `.config` files over
 * Move `monitor-hotplug.sh` to `~/bin` or wherever makes sense
+* Delete `~/.config/git` -> it has weird configs I don't like
 
 ## Problems
 
