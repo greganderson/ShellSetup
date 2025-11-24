@@ -45,3 +45,9 @@ Forgot-where-it-came-from:
 ## Problems
 
 * Vim setup: treesitter was causing problems, but `:Lazy sync` seems to have resolved them. I think.
+* Windows updated the BIOS:
+  1. Boot into USB arch
+  2. Run `fdisk -l`. Look for the EFI entry (should be partition 1)
+  3. Mount the partition: `mount /dev/nvme0n1p1 /mnt` (replace the argument with the EFI partition path)
+  4. Run `bootctl --esp-path=/mnt install`
+  5. Reboot
