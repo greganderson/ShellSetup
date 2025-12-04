@@ -51,3 +51,4 @@ Forgot-where-it-came-from:
   3. Mount the partition: `mount /dev/nvme0n1p1 /mnt` (replace the argument with the EFI partition path)
   4. Run `bootctl --esp-path=/mnt install`
   5. Reboot
+* If you lose wifi and can't turn it back on, you might need to unblock it: `rfkill unblock wlan`
