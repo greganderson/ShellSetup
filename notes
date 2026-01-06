@@ -34,7 +34,6 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
             ^ Disable "Show mark indicators"
             ^ Enable mouse reporting and report mouse wheel events, but disable mouse clicks and drags. This lets you click and drag to select things like you'd expect, but also lets you scroll like you'd expect.
     - Karabiner (key remapper) - **NOTE** Looks like you can change these keybindings in System Settings now, need to verify
-        o For the Glove80, make it so the function keys work as function keys
     - Scroll Reverser (natural scrolling on trackpad, but not on mouse)
     - OneDrive
     - Raycast - window snapping and clipboard history
