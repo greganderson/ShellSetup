@@ -52,3 +52,7 @@ Forgot-where-it-came-from:
   4. Run `bootctl --esp-path=/mnt install`
   5. Reboot
 * If you lose wifi and can't turn it back on, you might need to unblock it: `rfkill unblock wlan`
+
+## Notes
+
+Use `remmina` to get to Northstar
