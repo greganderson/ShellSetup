@@ -8,6 +8,7 @@ Pacman:
 * ruby
 * ruby-erb
 * tmux
+  - Once installed, make sure to rename `~/.config/tmux/tmux.conf` to be a .bak file so my config file will be used instead
 * python-debugpy
 * keyd
 * direnv
