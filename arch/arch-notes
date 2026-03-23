@@ -42,6 +42,7 @@ Forgot-where-it-came-from:
 * Move `.config` files over
 * Move `monitor-hotplug.sh` to `~/bin` or wherever makes sense
 * Delete `~/.config/git` -> it has weird configs I don't like
+* For vscode my mouse cursor was enormous, while everything else looked fine. Add a little script or alias so it'll launch with this variable set, like this: `XCURSOR_SIZE=24 code`
 
 ## Problems
 
