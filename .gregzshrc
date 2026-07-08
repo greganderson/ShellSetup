@@ -35,6 +35,7 @@ alias vim=nvim
 alias cvim=/usr/bin/vim
 # For class, since code takes me to cursor
 alias vscode=/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
+alias bd="bootdev"
 
 man() {
   env LESS_TERMCAP_mb=$'\E[01;31m' \
