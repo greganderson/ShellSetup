@@ -32,9 +32,21 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
     - powerline10k
     - Neovim
         o Use repo for configs
+        o Plugins:
+            ^ ruff (add config file)
+            ^ pyright
     - AstroVim (dependencies are listed on the astrovim site)
         - ripgrep (brew)
     - Chrome
+    - Brave
+        o Add this in the custom filters section of brave://settings/shields/filters (it dark modes canvas):
+```
+dixietech.instructure.com##html:style(filter: invert(90%) hue-rotate(180deg) !important; background: #111 !important)
+dixietech.instructure.com##img:style(filter: invert(100%) hue-rotate(180deg) !important)
+dixietech.instructure.com##video:style(filter: invert(100%) hue-rotate(180deg) !important)
+dixietech.instructure.com##iframe:style(filter: invert(100%) hue-rotate(180deg) !important)
+dixietech.instructure.com##.ic-app-header:style(filter: invert(100%) hue-rotate(180deg) !important)
+```
     - iTerm
         o Go to profiles->terminal:
             ^ Disable "Show mark indicators"
