@@ -133,3 +133,22 @@ source <(fzf --zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(direnv hook zsh)"
+
+# opencode
+export PATH=/home/greg/.opencode/bin:$PATH
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/greg/.local/bin:$PATH"
+
+. "$HOME/.local/share/../bin/env"
+
+# pnpm
+export PNPM_HOME="/home/greg/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+
+autoload -U compinit; compinit
