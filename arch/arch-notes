@@ -46,7 +46,6 @@ Forgot-where-it-came-from:
 
 ## Problems
 
-* Vim setup: treesitter was causing problems, but `:Lazy sync` seems to have resolved them. I think.
 * Windows updated the BIOS:
   1. Boot into USB arch
   2. Run `fdisk -l`. Look for the EFI entry (should be partition 1)
