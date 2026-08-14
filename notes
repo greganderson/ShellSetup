@@ -10,6 +10,7 @@ Helpful link for language servers for javascript: https://thoughtbot.com/blog/mo
 * black
 * pyright
 * ruff
+* vstls
 * (black and ruff configs are in the .config folder)
 
 # Mac setup
