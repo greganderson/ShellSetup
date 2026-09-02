@@ -36,6 +36,8 @@ alias cvim=/usr/bin/vim
 # For class, since code takes me to cursor
 alias vscode=/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
 alias bd="bootdev"
+# This is just for linux so I can have the equivalent of `open` from mac
+alias open="xdg-open"
 
 man() {
   env LESS_TERMCAP_mb=$'\E[01;31m' \
