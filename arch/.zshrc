@@ -152,3 +152,19 @@ esac
 # pnpm end
 
 autoload -U compinit; compinit
+
+# >>> Codex installer >>>
+export PATH="/home/greg/.local/bin:$PATH"
+# <<< Codex installer <<<
+
+toggle-prompt() {
+  if (( ${P10K_MINIMAL:-0} )); then
+    unset P10K_MINIMAL
+  else
+    typeset -g P10K_MINIMAL=1
+  fi
+
+  source ~/.p10k.zsh
+}
+# Not sure if I'll keep the alias, but if I do, I'll probably just rename the function
+alias tp=toggle-prompt
