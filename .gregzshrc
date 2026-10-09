@@ -3,7 +3,26 @@ export PATH=$PATH:$HOME/scripts
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/bin/ripgrep
 export PATH=$PATH:$HOME/bin/nvim/bin
-export PATH=/opt/homebrew/bin:$PATH
+export PATH=$PATH:$HOME/bin/vscode
+export PATH=$PATH:$HOME/bin/go/bin
+export PATH=$PATH:$HOME/bin/zig
+export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/.local/share/gem/ruby/3.4.0/bin
+export PATH=$PATH:$HOME/bin/android-studio/bin
+export PATH=$PATH:$HOME/.local/share/mise/installs/node/25.1.0/bin
+export PATH=$PATH:$HOME/bin/awesome-claude-code-subagents
+export PATH=$PATH:$HOME/bin/intellij/bin/
+export PATH=$PATH:$HOME/bin/flutter/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.pub-cache/bin
+
+# Intellij is opened with idea, which is weird to me. Add this as an option. Might get rid of it if I do remember to use idea instead of intellij
+alias intellij=idea
+
+# Android
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Kubernetes
 # Load all kubeconfigs (assuming they start with "config-")
@@ -16,7 +35,6 @@ export PATH=/opt/homebrew/bin:$PATH
 #unset KUBECONFIG
 
 # Just for handiness
-alias python=python3
 alias mv="mv -i"
 alias cp="cp -i"
 alias bashrc="pwd >> ~/.bashrc && vim ~/.bashrc && source ~/.bashrc"
@@ -27,14 +45,13 @@ alias l="ls"
 alias gs="git status"
 alias gb="git branch"
 alias k="kubectl"
-alias tm="/opt/homebrew/bin/tmuxinator"
+alias tm="tmuxinator"
 alias act="source .venv/bin/activate"
-alias dixie="cd ~/code/greg/dixie-tech"
+alias dixie="cd ~/code/dixie-tech"
 alias cat=bat
 alias vim=nvim
 alias cvim=/usr/bin/vim
 # For class, since code takes me to cursor
-alias vscode=/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
 alias bd="bootdev"
 # This is just for linux so I can have the equivalent of `open` from mac
 alias open="xdg-open"
@@ -53,6 +70,8 @@ man() {
 export MANPAGER='nvim +Man!'
 
 export EDITOR="vim"
+
+source ~/.github
 
 function cd () { builtin cd "$@" && ls; }
 
