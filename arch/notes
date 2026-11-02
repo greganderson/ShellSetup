@@ -47,6 +47,7 @@ Forgot-where-it-came-from:
 * Delete /usr/share/applications/keepass.desktop (after installing KeePassXC)
 * Move `docker-config/daemon.json` to `/etc/docker/`. Make sure to change the owner to `root:root` # this is because docker's subnet conflicts with the DT-CT subnet, which prevented me from accessing the internet
   - Update this line in `/etc/nsswitch.conf`: `hosts: files mymachines mdns_minimal [NOTFOUND=return] resolve myhostname dns` # the files entry was moved to the beginning
+* Run `omarchy plugin clone omarchy.notifications`. This will output a folder in ~/.config/omarchy/plugins/greg.notifications/. Move the files I have here to that new folder.
 
 ## Problems
 

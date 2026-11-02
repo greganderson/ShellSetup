@@ -201,6 +201,34 @@ function hidesBody(appName, appIcon, body) {
   return isChromiumDerived(appName, appIcon) && HIDE_BODY_SITES.indexOf(leadingHost(body)) >= 0
 }
 
+// Which output shows toasts, in order of preference: the first connected
+// screen matching an entry gets them all. Entries match case-insensitively
+// as a substring of the connector name (eDP-2, DP-1), the model ("LG
+// ULTRAWIDE") or the serial number, so a monitor is found by what it
+// is even when it lands on a different port. When nothing matches, every
+// screen shows toasts.
+var PREFERRED_SCREENS = ["LG ULTRAWIDE", "eDP"]
+
+function screenLabel(screen) {
+  var s = screen || {}
+  return [s.name, s.model, s.serialNumber].map(function(part) {
+    return String(part || "")
+  }).join(" ").toLowerCase()
+}
+
+function popupScreens(screens) {
+  var list = []
+  for (var i = 0; i < (screens ? screens.length : 0); i++) list.push(screens[i])
+
+  for (var p = 0; p < PREFERRED_SCREENS.length; p++) {
+    var wanted = String(PREFERRED_SCREENS[p]).toLowerCase()
+    for (var j = 0; j < list.length; j++) {
+      if (screenLabel(list[j]).indexOf(wanted) >= 0) return [list[j]]
+    }
+  }
+  return list
+}
+
 function snapshotOf(notification, timestamp) {
   var n = notification || {}
   var id = n.id || 0
@@ -481,6 +509,7 @@ if (typeof module !== "undefined") {
     parseExecArgv: parseExecArgv,
     shouldRenderCompactGlyph: shouldRenderCompactGlyph,
     hidesBody: hidesBody,
+    popupScreens: popupScreens,
     snapshotOf: snapshotOf,
     popupRoles: popupRoles,
     popupRowChanged: popupRowChanged,
