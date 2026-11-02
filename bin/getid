@@ -1,0 +1,29 @@
+#!/bin/bash
+
+mapfile -t matches < <(
+  docker ps -a --format '{{.ID}} {{.Image}}' | grep -i -- "$1"
+)
+
+count=${#matches[@]}
+
+if [[ $count -eq 0 ]]; then
+  echo "No containers matched '$1'"
+elif [[ $count -gt 1 && -z ${2:-} ]]; then
+  echo "Multiple containers matched '$1':"
+
+  for i in "${!matches[@]}"; do
+    echo "$((i + 1)): ${matches[$i]}"
+  done
+else
+  index=${2:-1}
+
+  if (( index < 1 || index > count )); then
+    echo "Invalid selection '$index'. Choose between 1 and $count."
+    exit 1
+  fi
+
+  read -r id image <<< "${matches[$((index - 1))]}"
+
+  printf '%s' "$id" | wl-copy
+  echo "Copied ID for: $image"
+fi
