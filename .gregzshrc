@@ -52,6 +52,7 @@ alias cat=bat
 alias vim=nvim
 alias cvim=/usr/bin/vim
 # For class, since code takes me to cursor
+alias code="XCURSOR_SIZE=24 code"
 alias bd="bootdev"
 # This is just for linux so I can have the equivalent of `open` from mac
 alias open="xdg-open"
@@ -74,6 +75,17 @@ export EDITOR="vim"
 source ~/.github
 
 function cd () { builtin cd "$@" && ls; }
+
+# toggle-prompt - makes it so I can run `tp` and have a short prompt for presenting
+tp() {
+  if (( ${P10K_MINIMAL:-0} )); then
+    unset P10K_MINIMAL
+  else
+    typeset -g P10K_MINIMAL=1
+  fi
+
+  source ~/.p10k.zsh
+}
 
 ### GREG END
 #export PATH=$PATH:
