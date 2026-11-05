@@ -24,10 +24,10 @@ o.window({ title = "^brave-personal - Brave$" }, { workspace = "5" })
 -- Startup applications
 -- o.launch_on_start wraps each command with uwsm-app.
 o.launch_on_start('brave --class=brave-work --profile-directory="Default"')
-o.launch_on_start("alacritty --class ws1-term")
-o.launch_on_start("alacritty --class ws2-term")
+o.launch_on_start("ghostty --class ws1-term")
+o.launch_on_start("ghostty --class ws2-term")
 -- o.launch_on_start("alacritty --class ws3-term") -- WebBBQ
-o.launch_on_start("alacritty --class ws5-term")
+o.launch_on_start("ghostty --class ws5-term")
 
 -- Optional Chromium windows
 -- o.launch_on_start("chromium --class=ws2-chromium")
