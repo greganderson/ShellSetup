@@ -21,6 +21,11 @@ Manual:
 * fzf
 * KeePassXC (using whatever tool it suggested, flutter maybe?)
 
+"Run":
+* Ghostty (it installs it)
+  - Go to run it again and there should be an option to set it as the default terminal
+    ^ Clone the shaders repo to ~/.config/ghostty/: https://github.com/hackrdotsh/ghostty-shaders
+
 Forgot-where-it-came-from:
 * envycontrol
 
