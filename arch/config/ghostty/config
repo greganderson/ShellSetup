@@ -1,5 +1,26 @@
 # Dynamic theme colors
 config-file = ?"~/.local/state/omarchy/current/theme/ghostty.conf"
+config-file = "~/.config/ghostty/colors.conf"
+
+# The colors config file can't have comments, at least I don't think so. The colors go in this order:
+# [colors.normal]
+# black
+# red
+# green
+# yellow
+# blue
+# magenta
+# cyan
+# white
+# [colors.bright]
+# black
+# red
+# green
+# yellow
+# blue
+# magenta
+# cyan
+# white
 
 # Font
 font-family = "CaskaydiaMono Nerd Font"
