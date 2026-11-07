@@ -1,39 +1,72 @@
--- Extra autostart processes.
--- o.launch_on_start("my-service")
-
 -- Workspace rules
-o.window("^ws1-term$", { workspace = "1" })
+hl.window_rule({
+	match = { class = "^ws1term$" },
+	workspace = "1",
+})
 
 -- Codegrinder
-o.window("^ws5-term$", { workspace = "2" })
+hl.window_rule({
+	match = { class = "^ws5term$" },
+	workspace = "2",
+})
 
 -- Telegram, ~WebBBQ~, Slack
-o.window("^org\\.telegram\\.desktop$", { workspace = "3 silent" })
--- o.window("^ws3-term$", { workspace = "3" })
-o.window("^(Slack|slack)$", { workspace = "3" })
+hl.window_rule({
+	match = { class = "^org\\.telegram\\.desktop$" },
+	workspace = "3 silent",
+})
+
+-- hl.window_rule({
+--     match = { class = "^ws3term$" },
+--     workspace = "3",
+-- })
+
+hl.window_rule({
+	match = { class = "^(Slack|slack)$" },
+	workspace = "3",
+})
 
 -- Obsidian and work browser
-o.window("^obsidian$", { workspace = "4" })
-o.window({ title = "^brave-work - Brave$" }, { workspace = "4" })
+hl.window_rule({
+	match = { class = "^obsidian$" },
+	workspace = "4",
+})
+
+hl.window_rule({
+	match = { class = "^brave-work$" },
+	workspace = "4",
+})
 
 -- Personal work
-o.window("^ws2-term$", { workspace = "5" })
-o.window({ title = "^ws2-chromium - Chromium$" }, { workspace = "5" })
-o.window({ title = "^brave-personal - Brave$" }, { workspace = "5" })
+hl.window_rule({
+	match = { class = "^ws2term$" },
+	workspace = "5",
+})
+
+hl.window_rule({
+	match = { class = "^ws2chromium$" },
+	workspace = "5",
+})
+
+hl.window_rule({
+	match = { class = "^brave-personal$" },
+	workspace = "5",
+})
 
 -- Startup applications
--- o.launch_on_start wraps each command with uwsm-app.
-o.launch_on_start('brave --class=brave-work --profile-directory="Default"')
-o.launch_on_start("ghostty --class ws1-term")
-o.launch_on_start("ghostty --class ws2-term")
--- o.launch_on_start("alacritty --class ws3-term") -- WebBBQ
-o.launch_on_start("ghostty --class ws5-term")
+hl.on("hyprland.start", function()
+	hl.exec_cmd('uwsm-app -- brave --class=brave-work --profile-directory="Default"')
+	hl.exec_cmd("uwsm-app -- ghostty --class=ws1term")
+	hl.exec_cmd("uwsm-app -- ghostty --class=ws2term")
+	-- hl.exec_cmd("uwsm-app -- alacritty --class ws3term") -- WebBBQ
+	hl.exec_cmd("uwsm-app -- ghostty --class=ws5term")
 
--- Optional Chromium windows
--- o.launch_on_start("chromium --class=ws2-chromium")
--- o.launch_on_start("chromium --class=ws5-chromium")
+	-- Optional Chromium windows
+	-- hl.exec_cmd("uwsm-app -- chromium --class=ws2chromium")
+	-- hl.exec_cmd("uwsm-app -- chromium --class=ws5chromium")
 
-o.launch_on_start('brave --class=brave-personal --profile-directory="Profile 1"')
-o.launch_on_start("/usr/bin/Telegram")
-o.launch_on_start("slack")
-o.launch_on_start("obsidian")
+	hl.exec_cmd('uwsm-app -- brave --class=brave-personal --profile-directory="Profile 1"')
+	hl.exec_cmd("uwsm-app -- /usr/bin/Telegram")
+	hl.exec_cmd("uwsm-app -- slack")
+	hl.exec_cmd("uwsm-app -- obsidian")
+end)
