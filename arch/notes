@@ -12,6 +12,7 @@ Pacman:
 * python-debugpy
 * keyd
 * direnv
+* bind (gives you `dig`)
 
 Ruby (`gem install`):
 * tmuxinator
