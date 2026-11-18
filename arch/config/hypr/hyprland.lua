@@ -29,3 +29,9 @@ require("default.hypr.toggles")
 
 -- Add any other personal Hyprland configuration below.
 -- o.window("qemu", { workspace = "5" })
+
+-- Stop apps in the terminal from taking over focus (I'm looking at you, codex)
+hl.window_rule({
+	match = { class = [[^com.mitchellh.ghostty$]] },
+	suppress_event = "activate activatefocus",
+})
